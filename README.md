@@ -4,7 +4,7 @@
     Flask is a small and lightweight Python web framework that provides useful tools and features that make creating web applications in Python easier. Flask is a well known python framework used for backend purposes to operate dynamic web pages by using route method. It gives developers flexibility and is a more accessible framework for new developers since you can build a web application quickly using only a single Python file.
     In this project, I have used HTML/CSS and bootstrap for the frontend part and Flask is used to operate backend part.
 
-you can access this site on url :- https://
+you can access this site on url :- http://qwitter.pythonanywhere.com/
 
 # Features
 
