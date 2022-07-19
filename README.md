@@ -6,7 +6,7 @@
 
 you can access this site on url :- https://
 
-#Features
+# Features
 
 1. Qwitter is a Blogging site  can be used to update status of user by posting a blog or short updates.
 2. It has a user info page wherein user can upload their profile pictures and other information.
