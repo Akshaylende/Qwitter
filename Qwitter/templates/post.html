@@ -1,0 +1,28 @@
+{% extends "main.html" %} 
+{% block content %}
+  <article class="media content-section">
+    <div class="media-body">
+      <div class="article-metadata">
+        <h5>{{ post.author.username }}</h5>
+        <small class="text-muted">
+          {{ post.date_posted.strftime('%Y-%m-%d') }}
+        </small>
+      </div>
+      <h3 class="article-title">{{ post.title }}</h3>
+      <p class="article-content">{{ post.content }}</p>
+    </div>
+    {% if post.author == current_user %}
+    <div>
+      <a
+        class="btn btn-secondary btn-sm mt-1 mb-1" href="{{ url_for('update_post', post_id=post.id) }}"> 
+        Update 
+      </a>
+      <a
+        class="btn btn-danger btn-sm m-1"
+        href="{{ url_for('delete_post', post_id=post.id) }}">
+        Delete
+      </a>
+    </div>
+    {% endif %}
+  </article>
+{% endblock content %}
